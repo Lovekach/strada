@@ -33,3 +33,18 @@ while(i < 19) {
     i = i + 1;
 }
 
+for(let l = 1; l < 19;l++ ) {
+    console.log(l);
+}
+
+let k = 1;
+for(; k < 19; k++) {
+    console.log(k);
+}
+
+let j = 1;
+for(; ; j++) {
+    if (j < 19);
+    console.log(j);
+    
+}
