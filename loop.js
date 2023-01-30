@@ -48,3 +48,11 @@ for(; ; j++) {
     console.log(j);
     
 }
+
+while (true) {
+    console.log('began');
+    *break;*
+    console.log('the end wich never happen')
+}
+console.log('the end');
+
