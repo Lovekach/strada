@@ -26,3 +26,10 @@
 //     console.log(r);
 //     r = r + 4;
 // }
+
+let i = 1;
+while(i < 19) {
+    console.log(i);
+    i = i + 1;
+}
+
