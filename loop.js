@@ -80,18 +80,35 @@
 
 //Object 
 
-const myPhoneBook = {
-    "Mother": 123,
-    "Father": 456,
-    "Sister": 789
+// const myPhoneBook = {
+//     "Mother": 123,
+//     "Father": 456,
+//     "Sister": 789
+// }
+// console.log(myPhoneBook);
+
+// console.log(myPhoneBook["Father"]);
+// console.log(myPhoneBook.Mother);
+
+// myPhoneBook ["Brother"] = 13579;
+// console.log(myPhoneBook);
+
+// delete myPhoneBook["Sister"];
+// console.log(myPhoneBook);
+
+
+const myBetterBook = {
+    "Father": 123,
+    "Mother": 456,
 }
-console.log(myPhoneBook);
+console.log(myBetterBook);
+console.log(myBetterBook.Mother);
+console.log(myBetterBook['Father']);
 
-console.log(myPhoneBook["Father"]);
-console.log(myPhoneBook.Mother);
+myBetterBook["Brother"] = 13678;
+console.log(myBetterBook);
 
-myPhoneBook ["Brother"] = 13579;
-console.log(myPhoneBook);
+delete myBetterBook['Father'];
+console.log(myBetterBook);
 
-delete myPhoneBook["Sister"];
-console.log(myPhoneBook);
+//Object
