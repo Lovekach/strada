@@ -56,24 +56,42 @@
 // }
 // console.log('the end');
 
-let g = 12;
-while (g >= 3) {
-    console.log(g);
-    g = g - 1;
-}
+// let g = 12;
+// while (g >= 3) {
+//     console.log(g);
+//     g = g - 1;
+// }
 
-for(let q = 1; q <= 4; q++) {
-    console.log(q);
-}
+// for(let q = 1; q <= 4; q++) {
+//     console.log(q);
+// }
 
 
-let w = 1;
-for(; w <= 3; w++) {
-    console.log(w);
-}
+// let w = 1;
+// for(; w <= 3; w++) {
+//     console.log(w);
+// }
 
-for(t = 1; t <= 8 ; ) {
-    console.log(t);
-    t = t + 3;
+// for(t = 1; t <= 8 ; ) {
+//     console.log(t);
+//     t = t + 3;
     
+// }
+
+//Object 
+
+const myPhoneBook = {
+    "Mother": 123,
+    "Father": 456,
+    "Sister": 789
 }
+console.log(myPhoneBook);
+
+console.log(myPhoneBook["Father"]);
+console.log(myPhoneBook.Mother);
+
+myPhoneBook ["Brother"] = 13579;
+console.log(myPhoneBook);
+
+delete myPhoneBook["Sister"];
+console.log(myPhoneBook);
