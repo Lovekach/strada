@@ -97,18 +97,30 @@
 // console.log(myPhoneBook);
 
 
-const myBetterBook = {
-    "Father": 123,
-    "Mother": 456,
-}
-console.log(myBetterBook);
-console.log(myBetterBook.Mother);
-console.log(myBetterBook['Father']);
+// const myBetterBook = {
+//     "Father": 123,
+//     "Mother": 456,
+// }
+// console.log(myBetterBook);
+// console.log(myBetterBook.Mother);
+// console.log(myBetterBook['Father']);
 
-myBetterBook["Brother"] = 13678;
-console.log(myBetterBook);
+// myBetterBook["Brother"] = 13678;
+// console.log(myBetterBook);
 
-delete myBetterBook['Father'];
-console.log(myBetterBook);
+// delete myBetterBook['Father'];
+// console.log(myBetterBook);
 
-//Object
+//Method
+
+const phoneBook = {
+    list: {
+        "John": 123,
+        "Jade": 456,
+        "Jim": 789,
+    },
+    log() {
+        console.log(this.list)
+    }
+};
+phoneBook.log();
