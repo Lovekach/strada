@@ -113,14 +113,47 @@
 
 //Method
 
+// const phoneBook = {
+//     list: {
+//         "John": 123,
+//         "Jade": 456,
+//         "Jim": 789,
+//     },
+//     log() {
+//         console.log(this.list)
+//     }
+// };
+// phoneBook.log();
+
+// delete phoneBook["Father"];
+
+
+// const myPhoneBook = {
+//     list: {
+//         "Mother": 123,
+//         "Father": 456,
+//         "Sister": 789
+//     },
+//     add(name,number) {
+//     this.list[name] = number;
+//         },
+//         delete(name,number) {
+//             this.list[name] = number;
+//         }
+//     };
+//    myPhoneBook.add("Brother", 13579);
+//    console.log(myPhoneBook.list['Brother']);
+
+//     myPhoneBook.delete("Mother", 123);
+//     console.log(myPhoneBook.list['Mother']);
+
+//     console.log("Father" in myPhoneBook.list);
+
+
 const phoneBook = {
     list: {
         "John": 123,
-        "Jade": 456,
-        "Jim": 789,
-    },
-    log() {
-        console.log(this.list)
+        "Jane Doe" 456,
     }
 };
-phoneBook.log();
+console.log("John" in phoneBook.list);
