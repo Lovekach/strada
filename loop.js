@@ -237,3 +237,17 @@
 //     }
 // };
 // console.log("Papa" in phoneBook.list);
+
+
+const phoneBook = {
+    list : {
+        "John": 1234,
+        "Jane Doe": 5678,
+        "Jim Smith": 1111
+    },
+};
+for (const name in phoneBook.list) {
+    console.log('John'); 
+    console.log(phoneBook.list['John'] );
+   
+}
