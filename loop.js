@@ -247,7 +247,7 @@ const phoneBook = {
     },
 };
 for (const name in phoneBook.list) {
-    console.log('John'); 
+    console.log(name); 
     console.log(phoneBook.list['John'] );
    
 }
