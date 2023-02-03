@@ -157,3 +157,15 @@
 //     }
 // };
 // console.log("John" in phoneBook.list);
+
+const book = {
+    "Gary": 123,
+    "Phil": 456,
+    "Shoun": 789
+}
+console.log(book["Phil"]);
+
+book["Garie"] = 1234;
+book["Shoun"] = 10987;
+delete book["Phil"];
+console.log(book);
