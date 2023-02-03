@@ -158,14 +158,26 @@
 // };
 // console.log("John" in phoneBook.list);
 
-const book = {
-    "Gary": 123,
-    "Phil": 456,
-    "Shoun": 789
-}
-console.log(book["Phil"]);
+// const book = {
+//     "Gary": 123,
+//     "Phil": 456,
+//     "Shoun": 789
+// }
+// console.log(book["Phil"]);
 
-book["Garie"] = 1234;
-book["Shoun"] = 10987;
-delete book["Phil"];
-console.log(book);
+// book["Garie"] = 1234;
+// book["Shoun"] = 10987;
+// delete book["Phil"];
+// console.log(book);
+
+const book = {
+    list: {
+        "Jam": 123,
+        "Jim": 456,
+        "Jum": 789
+    },
+    log() {
+        console.log(this.list)
+    }
+};
+book.log();
