@@ -170,14 +170,43 @@
 // delete book["Phil"];
 // console.log(book);
 
-const book = {
-    list: {
-        "Jam": 123,
-        "Jim": 456,
-        "Jum": 789
+// const book = {
+//     list: {
+//         "Jam": 123,
+//         "Jim": 456,
+//         "Jum": 789
+//     },
+//     log() {
+//         console.log(this.list)
+//     }
+// };
+// book.log();
+
+// const telBook = {
+//     list : {
+//         "One": 1,
+//         "Two": 2,
+//         "Three": 3,
+//     }
+// };
+// const fullNumber = 'Two';
+// console.log(telBook.list[fullNumber]);
+// console.log(telBook.list["Two"]);
+
+const telBook = {
+    list : {
+        "One": 1,
+        "Two": 2,
+        "Three": 3,
     },
-    log() {
-        console.log(this.list)
-    }
+   add(name, number) {
+    this.list[name] = number;
+   },
+   delete(name,number) {
+    this.list[name] = number;
+   }
 };
-book.log();
+   telBook.add('Four', 4);
+   console.log(telBook.list["Four"]);
+   telBook.delete('Two', 2);
+   console.log(telBook.list['Two']);
