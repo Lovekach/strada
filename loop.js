@@ -193,20 +193,47 @@
 // console.log(telBook.list[fullNumber]);
 // console.log(telBook.list["Two"]);
 
-const telBook = {
-    list : {
-        "One": 1,
-        "Two": 2,
-        "Three": 3,
-    },
-   add(name, number) {
-    this.list[name] = number;
-   },
-   delete(name,number) {
-    this.list[name] = number;
-   }
-};
-   telBook.add('Four', 4);
-   console.log(telBook.list["Four"]);
-   telBook.delete('Two', 2);
-   console.log(telBook.list['Two']);
+// const telBook = {
+//     list : {
+//         "One": 1,
+//         "Two": 2,
+//         "Three": 3,
+//     },
+//    add(name, number) {
+//     this.list[name] = number;
+//    },
+//    delete(name,number) {
+//     this.list[name] = number;
+//    }
+// };
+//    telBook.add('Four', 4);
+//    console.log(telBook.list["Four"]);
+//    telBook.delete('Two', 2);
+//    console.log(telBook.list['Two']);
+
+// const phoneBook = {
+//     list: {
+//         "Papa": 123,
+//         "Mama": 456,
+//         "Brat": 789
+//     }
+// };
+// if (phoneBook.list.Mama) {
+//     console.log('Mama it is here!');
+// }
+
+
+// if (phoneBook.list.Sister) {
+//     console.log('Sister it is not here!');
+// }
+
+// console.log(phoneBook.list.Sister);
+
+// const phoneBook = {
+//     list: {
+//         "Papa": 1,
+//         "Mama": 2,
+//         "Brat": 3
+//     }
+// };
+// console.log("Papa" in phoneBook.list);
