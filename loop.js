@@ -150,10 +150,10 @@
 //     console.log("Father" in myPhoneBook.list);
 
 
-const phoneBook = {
-    list: {
-        "John": 123,
-        "Jane Doe" 456,
-    }
-};
-console.log("John" in phoneBook.list);
+// const phoneBook = {
+//     list: {
+//         "John": 123,
+//         "Jane Doe" 456,
+//     }
+// };
+// console.log("John" in phoneBook.list);
