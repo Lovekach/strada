@@ -70,3 +70,15 @@
 
 // console.log(obj);
 
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// };
+
+// console.log('x' in obj);
+
+// let obj = {x: 1, y: 2, z: 3};
+// delete obj.x;
+
+// console.log('x' in obj);
