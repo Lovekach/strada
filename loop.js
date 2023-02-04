@@ -239,15 +239,28 @@
 // console.log("Papa" in phoneBook.list);
 
 
-const phoneBook = {
-    list : {
-        "John": 1234,
-        "Jane Doe": 5678,
-        "Jim Smith": 1111
-    },
-};
-for (const name in phoneBook.list) {
-    console.log(name); 
-    console.log(phoneBook.list['John'] );
+// const phoneBook = {
+//     list : {
+//         "John": 1234,
+//         "Jane Doe": 5678,
+//         "Jim Smith": 1111
+//     },
+// };
+// for (const name in phoneBook.list) {
+//     console.log(name); 
+//     console.log(phoneBook.list['John'] );
    
-}
+// 
+
+const phoneBook = {
+    list: {
+        "Papa": 1,
+        "Mama": 2,
+        "Brat": 3,
+    },
+   
+log() {
+    console.log(this.list)
+    }
+};
+phoneBook.log();
