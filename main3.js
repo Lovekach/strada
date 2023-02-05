@@ -4,7 +4,7 @@ const list = {
     'wash a car' : 'In Progress',
     'have a walk' : 'Done',
     'make a bed' : 'In progress',
-    'have a breakfast' : 'To Do'
+    
 
 }
 
@@ -54,8 +54,9 @@ console.log(list['create a new practice task']);
 addTask('have a walk');
 console.log(list['have a walk']);
 
-addTask('have a breakfast');
-console.log(list['have a breakfast']);
+let name = 'have a breakfast';
+addTask(name);
+console.log(list[name]);
 
 changeStatus('have a breakfast', 'In Progress');
 console.log(list['have a breakfast']);
