@@ -14,6 +14,17 @@ function changeStatus(taskName,status) {
 function addTask(taskName) {
     list[taskName] = 'To Do';
 }
+function addTask(taskName) {
+    list[taskName] = 'Todo';
+}
+
+function changeStatus(taskName, status) {
+    list[taskName] = status ;
+}
+
+// function deleteTask(taskName) {
+//     delete list[taskName];
+// }
 function deleteTask(taskName) {
     delete list[taskName];
 }
@@ -42,6 +53,15 @@ console.log(list['create a new practice task']);
 
 addTask('have a walk');
 console.log(list['have a walk']);
+
+addTask('have a breakfast');
+console.log(list['have a breakfast']);
+
+changeStatus('have a breakfast', 'In Progress');
+console.log(list['have a breakfast']);
+
+deleteTask('have a breakfast');
+console.log(list['have a breakfast']);
 
 deleteTask('make a bed'); 
 console.log(list['make a bed']);
