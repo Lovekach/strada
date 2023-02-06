@@ -22,9 +22,9 @@ function changeStatus(taskName, status) {
     list[taskName] = status ;
 }
 
-// function deleteTask(taskName) {
-//     delete list[taskName];
-// }
+function deleteTask(taskName) {
+    delete list[taskName];
+}
 function deleteTask(taskName) {
     delete list[taskName];
 }
@@ -55,8 +55,8 @@ addTask('have a walk');
 console.log(list['have a walk']);
 
 let name = 'have a breakfast';
-addTask(name);
-console.log(list[name]);
+addTask('have a breakfast');
+console.log(list['have a breakfast']);
 
 changeStatus('have a breakfast', 'In Progress');
 console.log(list['have a breakfast']);
@@ -70,8 +70,3 @@ console.log(list['make a bed']);
 console.log(list);
 
 showList(); 
-
-// добавить новую задачу 
-// поменять данные задачи на 'In progress'
-//  удалить эту задачу из списка
-// вывести весь список чтобы убедиться чтобы этой задачи больше нет
