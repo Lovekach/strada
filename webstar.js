@@ -1,12 +1,46 @@
-const user = {
-    name: 'Vasya',
-    age: 30,
-    lastName: 'Pupkin',
-    34: '34',
-}
-console.log('age' in user); // Проверка на наличие св-ва в обьекте user(true или false);
+// const phoneBook = {
+//     list: {
+//         mama: 12,
+//         papa: 13,
+//         brat: 14,
+//     },
+//     add(name, number) {
+//         this.list[name] = number;
+//     }
+// };
+// phoneBook.add("sistr", 15);
+// console.log(phoneBook.list.sistr);
 
-for(let key in user) {
-    // console.log(key);
-    console.log(key + ' : ' + user[key]);
-}
+// function addRecord(key,value) {
+//     this.list[key] = value;
+// }
+
+// const phoneBook = {
+//     list: {
+//         "John": 12,
+//         "Jane": 34,
+//         "Jade": 45,
+//     },
+//     addRecord
+// };
+
+// const toDoList = {
+//     list: {
+//         "make a video": "open",
+//     },
+//     addRecord
+// }
+// toDoList.addRecord('do somethign', 'open');
+// console.log(toDoList.list)
+// let anyText = ` string 1
+// string 2
+// string 3`
+
+// console.log(anyText);
+
+
+//String
+
+let anyText = '"Hello" world'
+
+console.log(anyText);
