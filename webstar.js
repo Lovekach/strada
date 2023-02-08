@@ -49,3 +49,11 @@
 // let anyText = 'Hello world'
 // console.log(anyText.length[0]);
 
+//Array 
+// let toDoList = ['почитать', 'помыть посуду', 'помыть машину'];
+// const firstElement = toDoList[0];
+// toDoList[0] = 'освежиться'
+// const lastElement = toDoList[toDoList.length - 1];
+// console.log(toDoList[0]);
+// let toDoList = Array.of('почитать', 'помыть посуду', 'помыть машину');
+// let toDoList = new Array('почитать', 'помыть посуду', 'помыть машину');
