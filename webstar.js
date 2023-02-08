@@ -41,6 +41,11 @@
 
 //String
 
-let anyText = '"Hello" world'
+// let anyText = '"Hello" world'
 
-console.log(anyText);
+// console.log(anyText);
+
+
+// let anyText = 'Hello world'
+// console.log(anyText.length[0]);
+
