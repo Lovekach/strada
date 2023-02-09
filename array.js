@@ -112,7 +112,13 @@
 // {'Go to the gym' : 'To do'},
 // ];
 
+// const result = task.filter((key) => key)
+
 // const result = task.findIndex((key) => key['To make a bed']);
 // console.log(task[result]);
 
 
+const array = [1, 2, 3, 4, 5, 6, 7];
+
+const result = array.map((item) => item * 2);
+console.log(result);
