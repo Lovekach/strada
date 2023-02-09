@@ -93,16 +93,26 @@
 //Метод поиска элементов внутри массива
 
 // array.indexOf() - команда для поиска элемента в массиве
-// array.lastIndexOf - поиск элемента в массиве с конца
-// array.includes - находится ли элемент вообще в массиве(true or false)
+// array.lastIndexOf() - поиск элемента в массиве с конца
+// array.includes()- находится ли элемент вообще в массиве(true or false)
+// array.findIndex() - проверка наличия {объекта} в массиве
+
+// const array = ["a", "b", "c", "d", "e"];
+
+// const result = array.indexOf("c");
+
+// // if(result !== -1) {
+// //     console.log(array[result]);
+// // } Просто проверка
+
+// console.log(result);
+
+// const task = [{'To buy a car' : 'In progress'}, 
+// {'To make a bed' : 'Done'}, 
+// {'Go to the gym' : 'To do'},
+// ];
+
+// const result = task.findIndex((key) => key['To make a bed']);
+// console.log(task[result]);
 
 
-const array = ["a", "b", "c", "d", "e"];
-
-const result = array.indexOf("c");
-
-// if(result !== -1) {
-//     console.log(array[result]);
-// } Просто проверка
-
-console.log(result);
