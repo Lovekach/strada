@@ -39,6 +39,7 @@ function compareNumeric(a, b) {
 list.sort(compareNumeric);
 console.log(list);
 
+
 addTask('Go to the cinema', 'In progress', 'Low');
 deleteTask('Write a post', 'To Do', 'Low');
 changeStatus('Have a walk', 'To Do', 'Low');
