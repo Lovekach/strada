@@ -22,27 +22,26 @@ function changeStatus(nameText, statusText, priorityText) {
 
 }
 
-
-function statusPriorityc(a, b) {
+function compareNumeric(a, b) {
     if (a.priority === b.priority) {
         return 0;
     }
 
     if (a.priority === 'Low' && b.priority !== 'Low') {
-        return 1;
+        return -1;
 
     }
 
-    return -1;
-}
-list.sort(statusPriority);
-console.log(list);
+    return 1;
 
+}
+
+list.sort(compareNumeric);
+console.log(list);
 
 addTask('Go to the cinema', 'In progress', 'Low');
 deleteTask('Write a post', 'To Do', 'Low');
 changeStatus('Have a walk', 'To Do', 'Low');
-
 
 
 
