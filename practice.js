@@ -58,4 +58,4 @@ console.log(num.toFixed(1) ); // '12.4'
 let numbe = 12.34;
 console.log(num.toFixed(4) ); // '12.3400'
 
-// isFinite и isNan
+// isFinite и isNan 
