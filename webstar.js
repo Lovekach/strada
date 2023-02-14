@@ -57,3 +57,22 @@
 // console.log(toDoList[0]);
 // let toDoList = Array.of('почитать', 'помыть посуду', 'помыть машину');
 // let toDoList = new Array('почитать', 'помыть посуду', 'помыть машину');
+
+function createCounter() {
+    let counter = 1;
+
+    return() => {
+        return counter++
+    }
+   ;
+	
+}
+
+let counterA = createCounter();
+let counterB = createCounter();
+
+console.log(counterA()); 
+console.log(counterA()); 
+console.log(counterA()); 
+
+console.log(counterB()); 
