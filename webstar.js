@@ -58,21 +58,35 @@
 // let toDoList = Array.of('почитать', 'помыть посуду', 'помыть машину');
 // let toDoList = new Array('почитать', 'помыть посуду', 'помыть машину');
 
-function createCounter() {
-    let counter = 1;
+// function createCounter() {
+//     let counter = 1;
 
-    return() => {
-        return counter++
-    }
-   ;
+//     return() => {
+//         return counter++
+//     }
+//    ;
 	
-}
+// }
 
-let counterA = createCounter();
-let counterB = createCounter();
+// let counterA = createCounter();
+// let counterB = createCounter();
 
-console.log(counterA()); 
-console.log(counterA()); 
-console.log(counterA()); 
+// console.log(counterA()); 
+// console.log(counterA()); 
+// console.log(counterA()); 
 
-console.log(counterB()); 
+// console.log(counterB()); 
+
+const printNumbers = (from , to) => {
+    console.log(from, to);
+};
+// let timerId = setInterval(printNumbers, 1000, 1++ , 10);
+
+const customSetInterval = (func, intervfal, ...params) => {
+    setTimeout(() => {
+        func(...params);
+        customSetInterval(func, intervfal, ...params);
+    }, intervfal);
+};
+
+customSetInterval(printNumbers, 1000, 1, 10);
