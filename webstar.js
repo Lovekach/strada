@@ -76,17 +76,15 @@
 // console.log(counterA()); 
 
 // console.log(counterB()); 
+let from = 1;
+let to = 10;
+let timerId = setInterval(() => printNumbers(from++, to), 1000);
 
-const printNumbers = (from , to) => {
-    console.log(from, to);
+function printNumbers(from, to) {
+    if (from <= to) {
+        console.log(from);
+ } else{
+    clearInterval(timerId);
+ }
+    
 };
-// let timerId = setInterval(printNumbers, 1000, 1++ , 10);
-
-const customSetInterval = (func, intervfal, ...params) => {
-    setTimeout(() => {
-        func(...params);
-        customSetInterval(func, intervfal, ...params);
-    }, intervfal);
-};
-
-customSetInterval(printNumbers, 1000, 1, 10);
