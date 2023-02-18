@@ -76,15 +76,15 @@
 // console.log(counterA()); 
 
 // console.log(counterB()); 
-let from = 1;
-let to = 10;
-let timerId = setInterval(() => printNumbers(from++, to), 1000);
+// let from = 1;
+// let to = 10;
+// let timerId = setInterval(() => printNumbers(from++, to), 1000);
 
-function printNumbers(from, to) {
-    if (from <= to) {
-        console.log(from);
- } else{
-    clearInterval(timerId);
- }
+// function printNumbers(from, to) {
+//     if (from <= to) {
+//         console.log(from);
+//  } else{
+//     clearInterval(timerId);
+//  }
     
-};
+// };
