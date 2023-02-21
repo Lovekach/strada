@@ -1,90 +1,59 @@
-// const phoneBook = {
-//     list: {
-//         mama: 12,
-//         papa: 13,
-//         brat: 14,
-//     },
-//     add(name, number) {
-//         this.list[name] = number;
-//     }
-// };
-// phoneBook.add("sistr", 15);
-// console.log(phoneBook.list.sistr);
+const hourElement = document.querySelector('.hour');
+const minuteElement = document.querySelector('.minute');
+const secondElement = document.querySelector('.second');
 
-// function addRecord(key,value) {
-//     this.list[key] = value;
-// }
+const startStop = document.querySelector('.button');
 
-// const phoneBook = {
-//     list: {
-//         "John": 12,
-//         "Jane": 34,
-//         "Jade": 45,
-//     },
-//     addRecord
-// };
+startStop.addEventListener('click', () => {
+    clearInterval(interval)
+    interval = setInterval(startTimer, 1000)
+})
 
-// const toDoList = {
-//     list: {
-//         "make a video": "open",
-//     },
-//     addRecord
-// }
-// toDoList.addRecord('do somethign', 'open');
-// console.log(toDoList.list)
-// let anyText = ` string 1
-// string 2
-// string 3`
-
-// console.log(anyText);
-
-
-//String
-
-// let anyText = '"Hello" world'
-
-// console.log(anyText);
-
-
-// let anyText = 'Hello world'
-// console.log(anyText.length[0]);
-
-//Array 
-// let toDoList = ['почитать', 'помыть посуду', 'помыть машину'];
-// const firstElement = toDoList[0];
-// toDoList[0] = 'освежиться'
-// const lastElement = toDoList[toDoList.length - 1];
-// console.log(toDoList[0]);
-// let toDoList = Array.of('почитать', 'помыть посуду', 'помыть машину');
-// let toDoList = new Array('почитать', 'помыть посуду', 'помыть машину');
-
-// function createCounter() {
-//     let counter = 1;
-
-//     return() => {
-//         return counter++
-//     }
-//    ;
-	
-// }
-
-// let counterA = createCounter();
-// let counterB = createCounter();
-
-// console.log(counterA()); 
-// console.log(counterA()); 
-// console.log(counterA()); 
-
-// console.log(counterB()); 
-// let from = 1;
-// let to = 10;
-// let timerId = setInterval(() => printNumbers(from++, to), 1000);
-
-// function printNumbers(from, to) {
-//     if (from <= to) {
-//         console.log(from);
-//  } else{
-//     clearInterval(timerId);
-//  }
+// startStop.addEventListener('click', () => {
+//     clearInterval(interval)
+//     hour = 00,
+//     minute = 00,
+//     second = 00   
+//     hourElement.textContent = "00:"
+//     minuteElement.textContent = "00:"
+//     secondElement.textContent = "00"
     
-// };
+// })
+
+let hour = 00,
+    minute = 00,
+    second = 00,    
+    interval
+
+function startTimer() {
+    second++
+    if (second <= 9) {
+        secondElement.innerText = "0" + second
+    }
+    if(second > 9) {
+        secondElement.innerText = second
+    
+
+        minute++
+    if (second > 59 ) {
+        
+    if (minute <= 9) {
+        minuteElement.innerText = "0" + minute
+    }
+       
+       second = 0
+       secondElement.innerText = "0" + second
+    }
+}
+
+    
+ if(minute > 9) {
+    minuteElement.innerText = minute
+ }
+
+
+ if (hour > 9) {
+    hourElement.innerText = hour
+
+ }
+}
