@@ -5,55 +5,32 @@ const secondElement = document.querySelector('.second');
 const startStop = document.querySelector('.button');
 
 startStop.addEventListener('click', () => {
-    clearInterval(interval)
-    interval = setInterval(startTimer, 1000)
+    interval = setInterval(startTimer, 1);
 })
 
-// startStop.addEventListener('click', () => {
-//     clearInterval(interval)
-//     hour = 00,
-//     minute = 00,
-//     second = 00   
-//     hourElement.textContent = "00:"
-//     minuteElement.textContent = "00:"
-//     secondElement.textContent = "00"
+startStop.addEventListener('click', () => {
+    clearInterval(interval)
     
-// })
+})
 
-let hour = 00,
-    minute = 00,
-    second = 00,    
+let hour = 00;
+    minute = 00;
+    second = 00;    
     interval
 
 function startTimer() {
-    second++
+    second++;
+
     if (second <= 9) {
-        secondElement.innerText = "0" + second
+        secondElement.innerText = "0" + second;
     }
     if(second > 9) {
-        secondElement.innerText = second
-    
-
-        minute++
+        secondElement.innerText = second;
+    }
     if (second > 59 ) {
-        
-    if (minute <= 9) {
-        minuteElement.innerText = "0" + minute
-    }
-       
+        minute++; 
+        minuteElement.innerText = "0" + minute;
        second = 0
-       secondElement.innerText = "0" + second
+       secondElement.innerText = "0" + 0
     }
-}
-
-    
- if(minute > 9) {
-    minuteElement.innerText = minute
- }
-
-
- if (hour > 9) {
-    hourElement.innerText = hour
-
- }
 }
